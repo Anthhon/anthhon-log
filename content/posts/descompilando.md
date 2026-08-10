@@ -1,20 +1,17 @@
 ---
 title: "Descompilando"
 date: 2026-07-31T12:48:42-03:00
-draft: true
+draft: false
 ---
 
 ## Sobre o meu livro
 
-Atualmente, estou escrevendo o **Descompilando** com o intuito de ajudar iniciantes na linguagem C, que se sentem perdidos e não sabem por onde começar. Quando comecei a estudar sobre programação percebi de cara que **maior parte do conteúdo bom estava disponível apenas em inglês**, o que não foi um problema para mim que tive uma educação que me auxiliou e permitiu absorver esse tipo de conteúdo, porém, reconheço que nem todos possuíram a mesma oportunidade de aprender inglês ao decorrer da vida.
+Escrevi o Descompilando com o intuito de ajudar estudantes da linguagem C que se sentem perdidos e não sabem por onde começar. Quando comecei a estudar programação, percebi de cara que a maior parte do conteúdo bom estava disponível apenas em inglês. Isso não foi um problema para mim, pois tive uma educação que me auxiliou e permitiu absorver esse tipo de conteúdo. Porém, reconheço que nem todos tiveram a mesma oportunidade de aprender inglês ao longo da vida.
 
-Caso você tenha curiosidade e queira ver mais sobre o livro, [clique aqui.](/book/)
+Por conta disso, decidi tomar a frente e criar um conteúdo completamente gratuito, em Português, para ajudar as pessoas. Não sou nenhum escritor espetacular nem nada do tipo, e não tenho ego em relação a possíveis erros que possa ter cometido durante o desenvolvimento e a revisão do livro. Portanto, estou aberto a fazer modificações no conteúdo e darei os devidos créditos a quem me apresentar sugestões e possíveis melhorias.
 
-```c
-int <stdio.h>
+Além disso, esse projeto não tem compromisso com a seriedade, então, apesar de tentar manter o rigor técnico, não espere completa seriedade literária da obra!
 
-int main(void) {
-    printf("Hello, World\n");
-    return 0;
-}
-```
+Aceito sugestões e dúvidas através do meu e-mail <anthcomercial@gmail.com> ou do meu [Whatsapp](https://wa.me/5588993592881). Caso você queira tirar alguma dúvida presencialmente, estou geralmente presente pelo campus Mucambinho da UFC, em Sobral-CE.
+
+Se você se interessou pelo meu livro, [clique aqui](/book/) para baixá-lo na sua versão mais atualizada!
