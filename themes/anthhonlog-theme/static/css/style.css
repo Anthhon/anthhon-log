@@ -97,6 +97,11 @@ span {
     color: var(--orange);
 }
 
+svg {
+    scale: 1.2;
+    margin: 0.2vw 0.75vw 0.2vw 0;
+}
+
 .main-group {
     align-self: center;
     flex-direction: row;
@@ -219,7 +224,7 @@ span {
 }
 
 .main-post {
-    margin: 4vw;
+    margin: 4vw 4vw 1vw 4vw;
     flex-wrap: nowrap;
     padding: 4vw;
     overflow: scroll;
@@ -267,6 +272,23 @@ span {
 .post-highlight {
     margin: 0;
     padding: 0;
+}
+
+.return-button {
+    flex-direction: row;
+    
+    align-self: center;
+    margin: 0 1vw 1vw 1vw;
+    padding: 1vw;
+    width: fit-content;
+
+    font-size: small;
+    background: var(--black);
+    cursor: pointer;
+}
+
+.return-button:hover {
+    transform: scale(0.95);
 }
 
 /* LISTS */
