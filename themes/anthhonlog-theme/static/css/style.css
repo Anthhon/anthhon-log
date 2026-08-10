@@ -283,7 +283,7 @@ svg {
 
 .return-button {
     flex-direction: row;
-    
+
     align-self: center;
     margin: 0 2vw 2vw 2vw;
     padding: 1vw;
@@ -309,4 +309,51 @@ svg {
 /** avoid black background at post listing **/
 #section1 {
     background: none;
+}
+
+/* WARNNINGS */
+@media screen and (orientation: landscape) {
+    #rotate-device-warning {
+        display: none;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .main-group {
+        display: none;
+    }
+
+    header > p, footer > div > a {
+        font-size: smaller;
+        padding: 1vw 0;
+    }
+
+    footer > div {
+        gap: 4vw;
+    }
+
+    #rotate-device-warning {
+        display: flex;
+        margin: 6vw;
+        gap: 0.8vw;
+        background: var(--black);
+        padding: 12vw 0;
+    }
+
+    #rotate-device-warning > svg {
+        width: 14vw;
+        height: 14vw;
+
+        align-self: center;
+    }
+
+    #rotate-device-warning > h1 {
+        font-size: x-large;
+        color: var(--orange);
+        font-weight: 800;
+    }
+
+    #rotate-device-warning > p {
+        font-weight: 200;
+    }
 }
