@@ -173,7 +173,7 @@ svg {
     background: var(--black);
 
     max-height: 60vh;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .section-desc {
@@ -309,6 +309,7 @@ svg {
 /** avoid black background at post listing **/
 #section1 {
     background: none;
+    margin-left: -2vw;
 }
 
 /* WARNNINGS */

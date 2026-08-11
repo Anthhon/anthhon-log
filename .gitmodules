@@ -1,0 +1,6 @@
+[submodule "content/book"]
+	path = content/book
+	url = git@github.com:Anthhon/Descompilando.git
+[submodule "static/book"]
+	path = static/book
+	url = git@github.com:Anthhon/Descompilando.git
