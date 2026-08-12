@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://anthhon.github.io/anthhon-log/'
 languageCode = 'pt-BR'
 title = 'anthhon-log'
 theme = 'anthhonlog-theme'
