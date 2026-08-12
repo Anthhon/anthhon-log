@@ -121,6 +121,10 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/.cache/hugo"
+      
+      - name: Debug baseURL
+        run: |
+          echo "Base URL: ${{ steps.pages.outputs.base_url }}"
 
       - name: Cache save
         uses: actions/cache/save@v6
