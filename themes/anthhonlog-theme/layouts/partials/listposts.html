@@ -14,7 +14,7 @@
     {{ end }}
 
     {{ if .IsHome }}
-    <div class="post-list-option post-list-all-posts" onclick="window.location.href='{{ "/posts/" | relURL }}'">
+    <div class="post-list-option post-list-all-posts" onclick="window.location.href='{{ absURL "posts/" }}'">
         <li class="post-list-title">
             Ver todas as postagens
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
@@ -24,7 +24,7 @@
         </li>
     </div>
     {{ else if eq .Section "posts" }}
-    <div class="post-list-option post-list-all-posts" onclick="window.location.href='{{ "/" | relURL }}'">
+    <div class="post-list-option post-list-all-posts" onclick="window.location.href='{{ absURL ""}}'">
         <li class="post-list-title">
             Retornar a página inicial
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">

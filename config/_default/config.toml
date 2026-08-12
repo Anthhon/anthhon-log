@@ -1,3 +1,4 @@
+baseURL = 'https://localhost:1313/anthhon-log/'
 languageCode = 'pt-BR'
 title = 'anthhon-log'
 theme = 'anthhonlog-theme'

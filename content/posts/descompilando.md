@@ -14,4 +14,4 @@ Além disso, esse projeto não tem compromisso com a seriedade, então, apesar d
 
 Aceito sugestões e dúvidas através do meu e-mail <anthcomercial@gmail.com> ou do meu [Whatsapp](https://wa.me/5588993592881). Caso você queira tirar alguma dúvida presencialmente, estou geralmente presente pelo campus Mucambinho da UFC, em Sobral-CE.
 
-Se você se interessou pelo meu livro, [clique aqui](/book/descompilando.pdf) para baixá-lo na sua versão mais atualizada!
+Se você se interessou pelo meu livro, [clique aqui]({{< file "book/descompilando.pdf" >}}) para baixá-lo na sua versão mais atualizada!

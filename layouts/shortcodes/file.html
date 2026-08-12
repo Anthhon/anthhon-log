@@ -1,0 +1,3 @@
+{{- $path := .Get 0 -}}
+{{- $url := absURL $path -}}
+{{- $url | safeURL -}}
