@@ -276,6 +276,23 @@ svg {
     orange: var(--grey);
 }
 
+.post-content > ul {
+    display: block;
+    padding-left: 1vw;
+    list-style: square;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.post-content > ul > li::marker {
+    color: var(--orange);
+}
+
+.post-content > ul >li {
+    display: list-item;
+    text-align: left;
+}
+
 .post-highlight {
     margin: 0;
     padding: 0;
