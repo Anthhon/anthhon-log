@@ -1,6 +1,6 @@
 ---
 title: "Descompilando"
-date: 2026-07-31T12:48:42-03:00
+date: 2026-08-10
 draft: false
 ---
 
