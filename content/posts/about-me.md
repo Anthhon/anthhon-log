@@ -8,12 +8,18 @@ draft: false
 
 Sou estudante de Engenharia da Computação pela **UFC (Universidade Federal do Ceará)**, no campus Mucambinho, em Sobral-CE.
 
-Desde muito novo, tive bastante contato com computadores e acabei crescendo como um **entusiasta da computação** em geral. Aos 17 anos, ao descobrir a área, notei que era possível fazer carreira nela e, desde então, tenho feito minha parte para **construir meu futuro no que tanto gosto**.
+Desde muito novo, tive bastante contato com computadores e acabei crescendo como um **entusiasta da computação** em geral. Porém, de certa forma acabei me limitando em nem sequer tentar aprender a programar por acreditar que "é coisa de gênio" ou   Aos 17 anos, ao descobrir a área, notei que era possível fazer carreira nela e, desde então, tenho feito minha parte para **construir meu futuro no que tanto gosto**.
 
-## Por que criei esse blog
+Desde então tenho me empenhado em desenvolver meus conhecimentos em vários tipos de projetos que envolvam programação em baixo nível e até um pouco de programação-web (impossível ser programador em 2026 sem nunca ter tocado nisso), projetos esses que variavam em coisas como:
 
-Acredito que a informação é algo que dificilmente se torna indesejada e, no Brasil especialmente, existe uma **falta de conteúdo de qualidade** e de fácil acesso para quem está começando a estudar na área.
+# Projetos que já desenvolvi
 
-Como entusiasta de programação que também está em período de formação, acredito que seja extremamente conveniente a existência de um site como esse não só para outros estudantes que buscam informação, mas também para mim, que posso ter um portfólio visualmente apelativo e fora do comum XD.
+Abaixo segue uma lista resumida dos projetos que já me envolvi e tenho algum orgulho de compartilhar, mesmo que em grande parte não estejam necessariamente completos ou muito polidos:
 
-Minha intenção com esse site, inicialmente, é fazer postagens sobre tópicos que eu ache **interessantes** ou sobre conteúdos de fundamentos de programação complementares aos apresentados no livro que fiz. No entanto, nada impede que eu expanda o site futuramente com **ideias que possam surgir**.
+- [Serviço de ponto eletrônico (FOSS) | Django](https://github.com/Anthhon/ponto-libre)
+- [Framework web experimental | C](https://github.com/Anthhon/Vodka)
+- [Aplicação de envio de mensagens em TUI | C](https://github.com/Anthhon/stm)
+- [Interpretador de cálculos em TUI | C](https://github.com/Anthhon/calculator)
+- [Linguagem de programação interpretada | Lua](https://github.com/Anthhon/azulejo)
+
+Além disso, já brinquei bastante com criação de scripts, criei aplicativos de uso pessoal usando C/Python/Lua/Bash e desenvolvi também aplicações de uso privado para empresas no ramo de logística e distribuição. Parte disso por desenvolvimento profissional e outra por hobby mesmo, acredito que a programação seja uma boa maneira de se expressar e se desafiar intelectualmente.

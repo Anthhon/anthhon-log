@@ -11,7 +11,9 @@
     --desc-text: #676767;
 
     --black: #010101;
+    --grey-light: #414141;
     --grey: #1e1e1e;
+    --grey-darker: #111111;
     --white: #fefefe;
     --white-glow: #fefefe24;
 }
@@ -82,7 +84,7 @@ footer {
 }
 
 footer p, footer a {
-    color: var(--grey);
+    color: var(--grey-light);
     font-weight: 400;
     font-size: 12px;
 }
@@ -104,6 +106,16 @@ span {
 svg {
     scale: 1.2;
     margin: 0.2vw 0 0.2vw 0.75vw;
+}
+
+li > a {
+    text-align: left;
+    text-decoration: wavy var(--grey-darker) underline;
+    width: fit-content;
+}
+
+li > a:hover {
+    text-decoration: wavy var(--grey) underline;
 }
 
 .main-group {
@@ -262,18 +274,18 @@ svg {
     font-weight: 300;
 }
 
-.post-content > .highlight {
+.post-content > p > code {
+    color: var(--orange);
+}
+
+.post-content > .highlight, .post-content > pre {
     padding: 1vw;
-    background: var(--grey);
+    background: var(--grey-darker);
     border: 1px ridge var(--orange);
 }
 
-.post-content > .highlight > pre > code > span > span {
+.post-content > .highlight > pre > code > span > span, , .post-content > pre > code {
     color: none;
-}
-
-.post-content > p > a {
-    orange: var(--grey);
 }
 
 .post-content > ul {
@@ -314,6 +326,19 @@ svg {
 .return-button:hover {
     transform: scale(0.95);
 }
+
+/* TODO: Make it underline wavy at links */
+/***
+.post-content > p > a {
+    display: inline-block;
+    width: fit-content;
+    text-decoration: wavy var(--grey-darker) underline;
+}
+
+.post-content > p > a:hover {
+    text-decoration: wavy var(--grey) underline;
+}
+***/
 
 /* LISTS */
 

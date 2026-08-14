@@ -1,7 +1,7 @@
 ---
 title: "Debugando usando GDB"
 date: 2026-08-11
-draft: false
+draft: true
 ---
 
 # Oque é o GDB?
@@ -28,21 +28,35 @@ O código abaixo possui um erro, proposital, que será utilizado para auxiliar n
 ```c
 #include <stdio.h>
 
-void imprimir_elemento(int *arr, int tamanho, int indice)
-{
-    printf("Elemento %d: %d\n", indice, arr[indice]);
+void calcular_soma(int notas[], int tamanho, int *soma_ponteiro) {
+    for (int i = 0; i < tamanho; i++) {
+        soma_ponteiro = soma_ponteiro + notas[i];
+    }
 }
 
-int main(void)
-{
-    int numeros[5] = {10, 20, 30, 40, 50};
-    int idx;
-    
-    printf("Digite um índice (0-4): ");
-    scanf("%d", &idx);
-    
-    imprimir_elemento(numeros, 5, idx);
-    
+int main() {
+    // Notas de 5 alunos (média real = 7.8)
+    int notas[] = {7, 8, 9, 5, 10};
+    // Deve somar um total de 39
+    int soma_total = 0;
+    int quantidade = sizeof(notas) / sizeof(notas[0]);
+
+    calcular_soma(notas, quantidade, &soma_total);
+
+    int media = soma_total / quantidade;
+
+    printf("Soma total: %d\n", soma_total);
+    printf("Média calculada: %d\n", media);
     return 0;
 }
+```
+
+O algoritmo acima deve implementar um sistema que calcule a soma e média de notas de N alunos. O valor da soma total de notas é calculado pela função `calcular_soma(...)` e é guardado na variável `soma_total`, enquanto a média geral é calculada pela fórmula `soma_total / quantidade`.
+
+Porém, ao executar o código acima obtemos o seguinte resultado:
+
+```
+$ gcc -o main main.c && ./main
+Soma total: 0
+Média calculada: 0
 ```
