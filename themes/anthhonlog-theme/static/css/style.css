@@ -18,14 +18,11 @@
     --white-glow: #fefefe24;
 }
 
-/* GENERAL */
-*:not(script, head, h1, span) {
-    size: auto;
+/* GENERAL — no forced flex here anymore. Native block/inline stays. */
+*:not(script) {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-
-    display: flex;
-    flex-direction: column;
 
     font-family: "Google Sans Code", monospace;
     color: var(--white);
@@ -39,6 +36,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
     justify-content: space-between;
@@ -53,6 +52,7 @@ body {
 }
 
 a {
+    display: inline-block;
     padding: 0.1vw 0.2vw;
     color: var(--orange);
 }
@@ -62,6 +62,7 @@ strong {
 }
 
 header {
+    display: flex;
     width: auto;
     padding: 0.5vw;
     background: var(--orange);
@@ -83,16 +84,17 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
 
+footer div {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-self: center;
+}
+
 footer p, footer a {
     color: var(--grey-light);
     font-weight: 400;
     font-size: 12px;
-}
-
-footer div {
-    gap: 1vw;
-    align-self: center;
-    flex-direction: row;
 }
 
 footer a:hover {
@@ -104,23 +106,21 @@ span {
 }
 
 svg {
+    display: inline-block;
     scale: 1.2;
     margin: 0.2vw 0 0.2vw 0.75vw;
 }
 
 li > a {
+    display: block;
     text-align: left;
-    text-decoration: wavy var(--grey-darker) underline;
     width: fit-content;
 }
 
-li > a:hover {
-    text-decoration: wavy var(--grey) underline;
-}
-
 .main-group {
-    align-self: center;
+    display: flex;
     flex-direction: row;
+    align-self: center;
     gap: 4vw;
 }
 
@@ -133,6 +133,13 @@ li > a:hover {
 }
 
 /* MAIN MENU */
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vw;
+    align-self: center;
+}
+
 .menu-title, .menu-options {
     margin: 1vw;
 }
@@ -142,16 +149,16 @@ li > a:hover {
     text-shadow: 0 0 20px var(--white-glow);
 }
 
+.menu-options {
+    display: flex;
+    flex-direction: column;
+}
+
 .menu > *, .menu-option {
     margin: 0.5vw;
     align-self: flex-end;
     color: var(--white);
     font-weight: 500;
-}
-
-.menu {
-    margin-left: 4vw;
-    align-self: center;
 }
 
 .menu-option:hover {
@@ -174,6 +181,7 @@ li > a:hover {
 /* SECTIONS */
 
 .sections {
+    display: flex;
     flex-direction: row;
 }
 
@@ -189,6 +197,9 @@ li > a:hover {
 }
 
 .section-desc {
+    font-family: "Source Code Pro", monospace;
+    color: var(--desc-text);
+    font-size: small;
     margin-bottom: 2vw;
 }
 
@@ -197,23 +208,20 @@ li > a:hover {
     text-align: left;
 }
 
-.section-desc {
-    font-family: "Source Code Pro", monospace;
-    color: var(--desc-text);
-    font-size: small;
-}
-
 /* POSTS */
 
 .post-list {
+    display: flex;
+    flex-direction: column;
     gap: 0.5vw;
 }
 
 .post-list-option, .main-post {
+    display: flex;
+    flex-direction: row;
     gap: 4vw;
     justify-content: space-between;
     justify-items: center;
-    flex-direction: row;
     background: var(--black);
     padding: 0.2vw 1vw;
 
@@ -235,6 +243,7 @@ li > a:hover {
 }
 
 .post-list-all-posts > li {
+    display: flex;
     flex-direction: row;
     font-weight: 400;
 }
@@ -284,8 +293,9 @@ li > a:hover {
     border: 1px ridge var(--orange);
 }
 
-.post-content > .highlight > pre > code > span > span, , .post-content > pre > code {
-    color: none;
+.post-content > .highlight > pre > code > span > span,
+.post-content > pre > code {
+    color: inherit;
 }
 
 .post-content > ul {
@@ -300,7 +310,7 @@ li > a:hover {
     color: var(--orange);
 }
 
-.post-content > ul >li {
+.post-content > ul > li {
     display: list-item;
     text-align: left;
 }
@@ -311,6 +321,7 @@ li > a:hover {
 }
 
 .return-button {
+    display: flex;
     flex-direction: row;
 
     align-self: center;
@@ -326,19 +337,6 @@ li > a:hover {
 .return-button:hover {
     transform: scale(0.95);
 }
-
-/* TODO: Make it underline wavy at links */
-/***
-.post-content > p > a {
-    display: inline-block;
-    width: fit-content;
-    text-decoration: wavy var(--grey-darker) underline;
-}
-
-.post-content > p > a:hover {
-    text-decoration: wavy var(--grey) underline;
-}
-***/
 
 /* LISTS */
 
