@@ -63,6 +63,7 @@ strong {
 
 header {
     display: flex;
+    justify-content: center;
     width: auto;
     padding: 0.5vw;
     background: var(--orange);
@@ -71,13 +72,14 @@ header {
 }
 
 header p {
-    align-self: center;
     color: var(--white);
     font-weight: 600;
     font-size: 12px;
 }
 
 footer {
+    display: flex;
+    justify-content: center;
     width: auto;
     background: var(--black);
     padding: 0.8vw;
@@ -88,7 +90,6 @@ footer div {
     display: flex;
     flex-direction: row;
     gap: 1vw;
-    align-self: center;
 }
 
 footer p, footer a {
@@ -114,7 +115,12 @@ svg {
 li > a {
     display: block;
     text-align: left;
+    text-decoration: wavy var(--grey-darker) underline;
     width: fit-content;
+}
+
+li > a:hover {
+    text-decoration: wavy var(--grey) underline;
 }
 
 .main-group {
@@ -126,11 +132,13 @@ li > a {
 
 .main-bar {
     height: auto;
+    width: 0.2vw;
     overflow: hidden;
-    padding: 0.2vh;
     background: var(--orange);
     z-index: 0;
 }
+
+
 
 /* MAIN MENU */
 .menu {
@@ -224,7 +232,7 @@ li > a {
     justify-items: center;
     background: var(--black);
     padding: 0.2vw 1vw;
-
+    list-style-type: none;
     font-size: small;
 }
 
@@ -338,6 +346,19 @@ li > a {
     transform: scale(0.95);
 }
 
+/* TODO: Make it underline wavy at links */
+/***
+.post-content > p > a {
+    display: inline-block;
+    width: fit-content;
+    text-decoration: wavy var(--grey-darker) underline;
+}
+
+.post-content > p > a:hover {
+    text-decoration: wavy var(--grey) underline;
+}
+***/
+
 /* LISTS */
 
 .main-list {
@@ -352,18 +373,8 @@ li > a {
     margin-left: -2vw;
 }
 
-/* WARNNINGS */
-@media screen and (orientation: landscape) {
-    #rotate-device-warning {
-        display: none;
-    }
-}
-
+/* MOBILE PORTRAIT */
 @media screen and (orientation: portrait) {
-    .main-group {
-        display: none;
-    }
-
     header > p, footer > div > a {
         font-size: smaller;
         padding: 1vw 0;
@@ -371,30 +382,92 @@ li > a {
 
     footer > div {
         gap: 4vw;
+        flex-wrap: wrap;
+    }
+    
+    svg {
+        margin-left: 2vw;
+        margin-top: 0.25vw;
     }
 
-    #rotate-device-warning {
-        display: flex;
-        margin: 6vw;
-        gap: 0.8vw;
-        background: var(--black);
-        padding: 12vw 0;
+    .main-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 6vw;
+        padding: 4vw 0;
     }
 
-    #rotate-device-warning > svg {
-        width: 14vw;
-        height: 14vw;
+    .menu {
+        margin-top: 4vw;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
 
+    .menu-options {
+        gap: 1vw;
+    }
+
+    .menu-title {
+        font-size: clamp(1.2rem, 7vw, 2rem);
+    }
+
+    .menu > *, .menu-option, .menu-option-selected {
         align-self: center;
     }
 
-    #rotate-device-warning > h1 {
-        font-size: x-large;
-        color: var(--orange);
-        font-weight: 800;
+    .main-bar {
+        padding: 0.4vw;
+        width: 90%;
     }
 
-    #rotate-device-warning > p {
-        font-weight: 200;
+    .sections {
+        flex-direction: column;
+    }
+
+    .section-group {
+        width: 90vw;
+        margin: 4vw;
+        max-height: 65vh;
+    }
+
+    #section1 {
+        margin: 0;
+    }
+
+    .post-list {
+        display: flex;
+        gap: 2vw;
+        padding: 0 4vw
+    }
+
+    .post-list-all-posts {
+        margin-top: 2vw;
+    }
+
+    .return-button {
+        margin: 4vw 0 6vw 0;
+    }
+
+    .post-list-option, .main-post {
+        flex-wrap: wrap;
+        gap: 2vw;
+        padding: 1vw 2vw;
+    }
+
+    .post-content, .section-title, .section-desc {
+        padding: 0 4vw;
+    }
+
+    .section-title {
+        padding-top: 4vw;
+    }
+
+    .section-desc {
+        color: var(--white);
+    }
+
+    .post-content > * {
+        margin-bottom: 4vw;
     }
 }
