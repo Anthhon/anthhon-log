@@ -12,6 +12,12 @@ Por conta disso, decidi tomar a frente e criar um **conteúdo completamente grat
 
 Além disso, esse projeto não tem compromisso com a seriedade, então, apesar de tentar manter o rigor técnico, **não espere completa seriedade literária da obra!**
 
-Aceito sugestões e dúvidas através do meu e-mail <anthcomercial@gmail.com> ou do meu [Whatsapp](https://wa.me/5588993592881). Caso você queira tirar alguma dúvida presencialmente, estou geralmente presente pelo campus Mucambinho da UFC, em Sobral-CE.
-
 Se você se interessou pelo meu livro, [clique aqui]({{< file "book/descompilando.pdf" >}}) para baixá-lo na sua versão mais atualizada!
+
+# Como contribuir com o projeto
+
+A maneira mais simples de contribuir é por e-mail. Mande suas dúvidas, sugestões ou aponte melhorias tudo é bem-vindo em anthcomercial@gmail.com. Prometo, dentro de meus limites, tentar ler todos os feedbacks enviados e respondê-los adequadamente.
+
+Se quiser conversar pessoalmente, costumo estar no campus Mucambinho da UFC, em Sobral-CE. É só entrar em contato!
+
+E, se você tiver condições e quiser ajudar de forma financeira, fico grato por qualquer doação. O PIX é o mesmo e-mail <anthcomercial@gmail.com>.
